@@ -18,4 +18,19 @@ function calculatePercentage() {
     inputField.value = result;
 }
 
+document.addEventListener('keydown', function(event) {
+    var key = event.key;
+
+    if (key >= '0' && key <= '9') {
+        dabaya(key);
+    } else if (key === '+' || key === '-' || key === '*' || key === '/') {
+        dabaya(key);
+    } else if (key === '%' || key === 'Enter') {
+        calculatePercentage();
+    } else if (key === 'Backspace') {
+        document.getElementById('inp').value = document.getElementById('inp').value.slice(0, -1);
+    } else if (key === 'Escape') {
+        document.getElementById('inp').value = '';
+    }
+});
 
