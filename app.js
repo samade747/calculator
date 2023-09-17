@@ -18,6 +18,25 @@ function calculatePercentage() {
     inputField.value = result;
 }
 
+
+
+// document.addEventListener('keydown', function(event) {
+//     var key = event.key;
+
+//     if (key >= '0' && key <= '9') {
+//         dabaya(key);
+//     } else if (key === '+' || key === '-' || key === '*' || key === '/') {
+//         dabaya(key);
+//     } else if (key === '%' || key === 'Enter') {
+//         event.preventDefault(); 
+//         calculatePercentage();
+//     } else if (key === 'Backspace') {
+//         document.getElementById('inp').value = document.getElementById('inp').value.slice(0, -1);
+//     } else if (key === 'Escape') {
+//         document.getElementById('inp').value = '';
+//     }
+// });
+
 document.addEventListener('keydown', function(event) {
     var key = event.key;
 
@@ -25,12 +44,14 @@ document.addEventListener('keydown', function(event) {
         dabaya(key);
     } else if (key === '+' || key === '-' || key === '*' || key === '/') {
         dabaya(key);
-    } else if (key === '%' || key === 'Enter') {
+    } else if (key === '%' && !document.getElementById('inp').value.includes('%')) {
         calculatePercentage();
+    } else if (key === 'Enter') {
+        event.preventDefault(); 
+        eq();
     } else if (key === 'Backspace') {
         document.getElementById('inp').value = document.getElementById('inp').value.slice(0, -1);
     } else if (key === 'Escape') {
         document.getElementById('inp').value = '';
     }
 });
-
