@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+
+    <div>Calculator</div>
+
+    <div >
+        <input readonly type="text" name="" id="inp">
+    </div>
+    <div>
+        <button onclick="document.getElementById('inp').value = ''">Clear all</button>
+        <button onclick="document.getElementById('inp').value = document.getElementById('inp').value.slice(0, -1)">Delete</button>
+
+    </div>
+    <br>
+    <div>
+        <button onclick="dabaya(9)">9</button>
+        <button onclick="dabaya(8)">8</button>
+        <button onclick="dabaya(7)">7</button>
+        <button onclick="dabaya('+')">+</button>
+    </div>
+
+    <div>
+        <button onclick="dabaya(4)">4</button>
+        <button onclick="dabaya(5)">5</button>
+        <button onclick="dabaya(6)">6</button>
+        <button onclick="dabaya('-')">-</button>
+    </div>
+
+    <div>
+        <button onclick="dabaya(3)">3</button>
+        <button onclick="dabaya(2)">2</button>
+        <button onclick="dabaya(1)">1</button>
+        <button onclick="dabaya('/')">/</button>
+    </div>
+
+    <div>
+        <button onclick="dabaya(0)">0</button>
+        <button onclick="dabaya('*')">X</button>
+        <button onclick="eq()">=</button>
+        <button onclick="calculatePercentage()">%</button>
+
+    </div>
+
+
+
+
+</div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
