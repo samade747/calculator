@@ -18,47 +18,57 @@
     </div>
 </div>
 
-<div class="container calculator shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="border: red solid 1px;">
-    <div class="row">
+<div class="container calculator shadow-lg p-3 mb-5 bg-body-tertiary rounded" >
+    <div class="row" >
         <div class="col col-sm-12 d-flex justify-content-center align-items-center mb-2 " >
-               <input readonly type="text" name="input" id="inp" class="btn btn-outline-dark ">
-   
+               <input readonly type="text" name="input" id="inp" class="btn btn-outline-dark ">   
         </div>
     </div>
-    <div class="col col-sm-12 d-flex justify-content-center align-items-center gap-2 ">
-        <button class="btn btn-outline-primary" onclick="document.getElementById('inp').value = ''">Clear all</button>
-        <button class="btn btn-outline-primary" onclick="document.getElementById('inp').value = document.getElementById('inp').value.slice(0, -1)">Delete</button>
+
+    <div class="row">
+        <div class="col col-sm-12 d-flex justify-content-center align-items-center gap-2 ">
+            <button class="btn btn-outline-primary" onclick="document.getElementById('inp').value = ''">Clear all</button>
+            <button class="btn btn-outline-primary" onclick="document.getElementById('inp').value = document.getElementById('inp').value.slice(0, -1)">Delete</button>
+        </div>
     </div>
 
     <br>
 
-    <div class="col col-sm-12 d-flex justify-content-center align-items-center gap-2 mb-2 "> 
-        <button class="btn btn-outline-primary" onclick="dabaya(9)">9</button>
-        <button class="btn btn-outline-primary" onclick="dabaya(8)">8</button>
-        <button class="btn btn-outline-primary" onclick="dabaya(7)">7</button>
-        <button class="btn btn-outline-primary" onclick="dabaya('+')">+</button>
+    <div class="row">
+        <div class="col col-sm-12 d-flex justify-content-center align-items-center gap-2 mb-2 "> 
+            <button class="btn btn-outline-primary" onclick="dabaya(9)">9</button>
+            <button class="btn btn-outline-primary" onclick="dabaya(8)">8</button>
+            <button class="btn btn-outline-primary" onclick="dabaya(7)">7</button>
+            <button class="btn btn-outline-primary" onclick="dabaya('+')">+</button>
+        </div>
     </div>
 
-    <div class="col col-sm-12 d-flex justify-content-center align-items-center gap-2 mb-2">
-        <button class="btn btn-outline-primary" onclick="dabaya(4)">4</button>
-        <button class="btn btn-outline-primary" onclick="dabaya(5)">5</button>
-        <button class="btn btn-outline-primary" onclick="dabaya(6)">6</button>
-        <button class="btn btn-outline-primary" onclick="dabaya('-')">-</button>
+    <div class="row">
+        <div class="col col-sm-12 d-flex justify-content-center align-items-center gap-2 mb-2">
+            <button class="btn btn-outline-primary" onclick="dabaya(4)">4</button>
+            <button class="btn btn-outline-primary" onclick="dabaya(5)">5</button>
+            <button class="btn btn-outline-primary" onclick="dabaya(6)">6</button>
+            <button class="btn btn-outline-primary" onclick="dabaya('-')">-</button>
+        </div>
     </div>
 
+    <div class="row">
     <div class="col col-sm-12 d-flex justify-content-center align-items-center gap-2 mb-2">
         <button class="btn btn-outline-primary" onclick="dabaya(3)">3</button>
         <button class="btn btn-outline-primary" onclick="dabaya(2)">2</button>
         <button class="btn btn-outline-primary" onclick="dabaya(1)">1</button>
         <button class="btn btn-outline-primary" onclick="dabaya('/')">/</button>
     </div>
+    </div>
 
+    <div class="row">
     <div class="col col-sm-12 d-flex justify-content-center align-items-center gap-2 mb-2">
         <button class="btn btn-outline-primary" onclick="dabaya(0)">0</button>
         <button class="btn btn-outline-primary" onclick="dabaya('*')">X</button>
         <button class="btn btn-outline-primary" onclick="calculatePercentage()">%</button>
         <button class="btn btn-outline-primary" onclick="eq()">=</button>      
 
+    </div>
     </div>
 
 
